@@ -1,0 +1,21 @@
+{
+	"songs": [
+		["dud", "dud", [255, 102, 0]],
+		["peace", "dud", [255, 102, 0]]
+	],
+
+	"weekCharacters": [
+		"",
+		"bf",
+		"gf"
+	],
+	"weekBackground": "stage",
+
+	"storyName": "",
+	"weekBefore": "tutorial",
+	"weekName": "Tutorial",
+	"startUnlocked": true,
+
+	"hideStoryMode": false,
+	"hideFreeplay": false
+}

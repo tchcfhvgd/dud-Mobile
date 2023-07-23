@@ -1,0 +1,51 @@
+{
+	"song": {
+		"events": [
+			[
+				62682.9268292683,
+				[
+					[
+						"Change Character",
+						"Dad",
+						"dudpcguitar"
+					],
+					[
+						"Flash Camera",
+						"1",
+						""
+					]
+				]
+			],
+			[
+				85161.2903225807,
+				[
+					[
+						"Flash Camera",
+						"1",
+						""
+					],
+					[
+						"Change Character",
+						"Dad",
+						"dudpc"
+					]
+				]
+			],
+			[
+				103225.806451613,
+				[
+					[
+						"Change Character",
+						"Dad",
+						"dudpcguitar"
+					],
+					[
+						"Flash Camera",
+						"1",
+						""
+					]
+				]
+			]
+		]
+	}
+}

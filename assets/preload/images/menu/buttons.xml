@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="buttons.png">
+	<!-- Created with Adobe Animate version 21.0.0.35450 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="selected credits0000" x="0" y="0" width="947" height="281"/>
+	<SubTexture name="selected dudsonas0000" x="957" y="0" width="871" height="319"/>
+	<SubTexture name="selected freeplay0000" x="0" y="329" width="1155" height="349"/>
+	<SubTexture name="selected options0000" x="0" y="688" width="1155" height="348"/>
+	<SubTexture name="selected storymenu0000" x="1165" y="688" width="871" height="319"/>
+	<SubTexture name="unselected credits0000" x="0" y="1046" width="916" height="272"/>
+	<SubTexture name="unselected dudsonas0000" x="926" y="1046" width="823" height="302"/>
+	<SubTexture name="unselected freeplay0000" x="0" y="1358" width="1086" height="328"/>
+	<SubTexture name="unselected options0000" x="0" y="1696" width="1113" height="336"/>
+	<SubTexture name="unselected storymenu0000" x="1123" y="1696" width="823" height="302"/>
+</TextureAtlas>

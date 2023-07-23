@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"offsets": [
+				-60,
+				-320
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "idle"
+		},
+		{
+			"offsets": [
+				-154,
+				-271
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "right"
+		},
+		{
+			"offsets": [
+				-4,
+				-270
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "left"
+		},
+		{
+			"offsets": [
+				58,
+				-347
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "down"
+		},
+		{
+			"offsets": [
+				-105,
+				-220
+			],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "up"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/evil phandud",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "evil dud",
+	"flip_x": true,
+	"healthbar_colors": [
+		0,
+		153,
+		255
+	],
+	"camera_position": [
+		-20,
+		410
+	],
+	"sing_duration": 6.1,
+	"scale": 1
+}
