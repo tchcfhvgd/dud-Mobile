@@ -2856,6 +2856,9 @@ class PlayState extends MusicBeatState
 				Conductor.songPosition = FlxG.sound.music.time;
 
 				var canMiss:Bool = !ClientPrefs.ghostTapping;
+				if(brutal) {
+					canMiss = true;
+				}
 
 				// heavily based on my own code LOL if it aint broke dont fix it
 				var pressNotes:Array<Note> = [];
