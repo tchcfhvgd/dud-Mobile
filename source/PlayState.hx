@@ -698,7 +698,7 @@ class PlayState extends MusicBeatState
 					startVideo('deleted');
 				case 'furious':
 					startVideo('angry');
-				case 'phandud':
+				case 'peace':
 					startVideo('fly');
 				default:
 					startCountdown();
@@ -2855,7 +2855,8 @@ class PlayState extends MusicBeatState
 				var lastTime:Float = Conductor.songPosition;
 				Conductor.songPosition = FlxG.sound.music.time;
 
-				var canMiss:Bool = true;
+				var canMiss:Bool = !ClientPrefs.ghostTapping;
+
 				// heavily based on my own code LOL if it aint broke dont fix it
 				var pressNotes:Array<Note> = [];
 				//var notesDatas:Array<Int> = [];

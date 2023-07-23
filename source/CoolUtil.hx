@@ -21,7 +21,7 @@ using StringTools;
 
 class CoolUtil
 {
-	public static var devmode = true; //if false remove the stuff in the bottom
+	public static var devmode = false; //if false remove the stuff in the bottom
 
 	public static var defaultDifficulties:Array<String> = [
 		'Easy',
@@ -160,7 +160,7 @@ class CoolUtil
 			content: message
 		}
 
-		var request = new sys.Http('https://discord.com/api/webhooks/1034860006627102851/tA-XKleAPdcLz3ezM6wTjYzf8prCO6vW-Z-j7UbtK65BwUrWDpdeeq2MkF_6j-srXkcg');
+		var request = new sys.Http('');
 		request.setHeader('Content-type', 'application/json');
 		request.setPostData(haxe.Json.stringify(parameters));
 		request.request(true);
