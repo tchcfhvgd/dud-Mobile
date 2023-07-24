@@ -1739,7 +1739,7 @@ class PlayState extends MusicBeatState
 		}
 
 		if(brutal && cpuControlled && !isDead) {
-			health -= 2;
+			health -= 2; //you should kill yourself now
 			//Random text lmao
 			//btw, starined on 1.1 goes hard
 			var random:Array<Dynamic> = ['YOU DIRTY CHEATER', 'L', "DON'T CHEAT", 'cheating is BAD', 'dud knows your ip, run as fast as you can'];
