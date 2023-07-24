@@ -3247,15 +3247,17 @@ class PlayState extends MusicBeatState
 								if (brutal) {
 									FlxG.sound.playMusic(Paths.music('nothin'));
 								}
-								switch(SONG.song) {
-									case 'phandud':
-										CoolUtil.browserLoad('https://sites.google.com/view/evil-dud/');
-									case 'peace':
-										CoolUtil.browserLoad('https://sites.google.com/view/dudconfused/');
-									case 'tutorial':
-										CoolUtil.browserLoad('https://gamebanana.com/mods/405061');
-									default:
-										CoolUtil.browserLoad('https://sites.google.com/view/dudismad');
+								if((instakillOnMiss || health <= 0) && !practiceMode && !isDead) {
+									switch(SONG.song) {
+										case 'phandud':
+											CoolUtil.browserLoad('https://sites.google.com/view/evil-dud/');
+										case 'peace':
+											CoolUtil.browserLoad('https://sites.google.com/view/dudconfused/');
+										case 'tutorial':
+											CoolUtil.browserLoad('https://gamebanana.com/mods/405061');
+										default:
+											CoolUtil.browserLoad('https://sites.google.com/view/dudismad');
+									}
 								}
 								Lib.application.window.focus();
 								if(boyfriend.animation.getByName('hurt') != null) {
