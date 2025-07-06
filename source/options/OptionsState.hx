@@ -40,7 +40,7 @@ class OptionsState extends MusicBeatState
 
 	function openSelectedSubstate(label:String) {
 		if (label != "Adjust Delay and Combo"){
-			persistentUpdate = false;
+			//persistentUpdate = false;
 			removeTouchPad();
 		}
 		switch(label) {
