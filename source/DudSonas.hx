@@ -130,6 +130,9 @@ class DudSonas extends MusicBeatState
 
 		camFollowPos.setPosition((FlxG.mouse.screenX + 720) / 2, (FlxG.mouse.screenY + 1280) / 2);
 
+		addTouchPad("NONE", "A_B");
+		addTouchPadCamera();
+		
 		super.create();
 	}
 
@@ -149,7 +152,7 @@ class DudSonas extends MusicBeatState
 
 		if (!selectedSomethin)
 		{
-			if(FlxG.keys.justPressed.R) {
+			if(FlxG.keys.justPressed.R || touchPad.buttonA.justPressed) {
 				FlxG.sound.play(Paths.sound('scrollMenu'));
 				curSelected = FlxG.random.int(0, allduds.length - 1);
 				dostuff();

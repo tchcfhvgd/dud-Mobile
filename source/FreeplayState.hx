@@ -239,12 +239,18 @@ class FreeplayState extends MusicBeatState
 
 		diffstuff();
 
+		addTouchPad("NONE", "A_B_C");
+		addTouchPadCamera();
+		
 		super.create();
 	}
 
 	override function closeSubState() {
 		changeSelection(0, false);
 		persistentUpdate = true;
+		removeTouchPad();
+		addTouchPad("NONE", "A_B_C");
+		addTouchPadCamera();
 		super.closeSubState();
 	}
 
@@ -302,7 +308,7 @@ class FreeplayState extends MusicBeatState
 		var upP = controls.UI_UP_P;
 		var downP = controls.UI_DOWN_P;
 		var accepted = controls.ACCEPT;
-		var space = FlxG.keys.justPressed.SPACE;
+		var space = FlxG.keys.justPressed.SPACE || touchPad.buttonC.justPressed;
 
 		var shiftMult:Int = 1;
 		

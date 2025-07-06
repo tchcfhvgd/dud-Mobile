@@ -145,6 +145,8 @@ class CreditsState extends MusicBeatState
         nameText.x = namebgx + 10;
         nameText.y = namebgy + 5;
 
+		addTouchPad("UP_DOWN", "A_B");
+		
 		super.create();
 	}
 

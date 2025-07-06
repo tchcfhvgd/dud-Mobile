@@ -140,6 +140,8 @@ class MainMenuState extends MusicBeatState
 
 		dostuff();
 
+		addTouchPad("NONE", "B");
+		
 		super.create();
 	}
 
