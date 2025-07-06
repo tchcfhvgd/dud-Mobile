@@ -72,7 +72,10 @@ import sys.io.File;
 #end
 
 #if VIDEOS_ALLOWED
-import vlc.MP4Handler;
+#if hxvlc
+import hxvlc.flixel.*;
+import hxvlc.util.*;
+#end
 #end
 
 using StringTools;
@@ -781,7 +784,7 @@ class PlayState extends MusicBeatState
 		#end
 	}
 
-	public function initLuaShader(name:String, ?glslVersion:Int = 120)
+	public function initLuaShader(name:String, ?glslVersion:Int = 100)
 	{
 		if(!ClientPrefs.shaders) return false;
 
@@ -949,13 +952,16 @@ class PlayState extends MusicBeatState
 			return;
 		}
 
-		var video:MP4Handler = new MP4Handler();
-		video.playVideo(filepath);
-		video.finishCallback = function()
+		var video:FlxVideo = new FlxVideo();
+		video.load(filepath);
+		video.play();
+		video.onEndReached.add(function()
 		{
-			whathappenes(thing);
+			video.dispose();
+		    whathappenes(thing);
 			return;
-		}
+		}, true);
+
 		#else
 		FlxG.log.warn('Platform not supported!');
 		whathappenes(thing);
