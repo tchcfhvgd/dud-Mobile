@@ -198,7 +198,7 @@ class StoryMenuState extends MusicBeatState
 		changeWeek();
 		changeDifficulty();
 
-		addTouchPad("UP_DOWN", "B");
+		addTouchPad("NONE", "B");
 		addTouchPadCamera();
 		
 		super.create();
