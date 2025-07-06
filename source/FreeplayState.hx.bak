@@ -239,7 +239,7 @@ class FreeplayState extends MusicBeatState
 
 		diffstuff();
 
-		addTouchPad("NONE", "B_C");
+		addTouchPad("NONE", "A_B_C");
 		addTouchPadCamera();
 		
 		super.create();
@@ -249,7 +249,7 @@ class FreeplayState extends MusicBeatState
 		changeSelection(0, false);
 		persistentUpdate = true;
 		removeTouchPad();
-		addTouchPad("NONE", "B_C");
+		addTouchPad("NONE", "A_B_C");
 		addTouchPadCamera();
 		super.closeSubState();
 	}
